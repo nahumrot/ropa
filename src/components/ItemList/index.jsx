@@ -4,6 +4,12 @@ import Item from '../Item'
 
 export default function ItemList({data= []}) {
   return (
-    data.map(electro => <Item key = {electro.id} info={electro} />)
+    <div className='bcard'>
+
+      {data.map((electro) => <Item key = {electro.id} info={electro}/>)}
+
+    </div>
+    
+    
   )
 }

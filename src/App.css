@@ -1,15 +1,35 @@
 
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("https://img.freepik.com/fotos-premium/mujer-hermosa-joven-playa-tropical-puesta-sol_109800-9755.jpg?w=2000");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header::before{
+    content: '';
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image:inear-gradient(0deg, rgba(255,255,255,0.5802696078431373) 0%, rgba(198,197,195,1) 92%);
+}
+
+
 .nav{
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 20px 80px;
-        background-color: rgb(235, 204, 255);
-        box-shadow: 0 5px 15px rgba(8, 8, 8, 0.006);
+        box-shadow: 0 5px 15px rgba(228, 223, 223, 0.010);
         z-index: 999;
-        position: sticky;
+        position: fixed;
         top: 0%;
         left: 0%;
+        width: 100%;
 }
 
 .navbar{
@@ -19,30 +39,184 @@
 
 }
 
+.nav.fixed{
+    background-color: #ffc08c ;
+    transition: 0.3s ease-in-out;
+}
+
 .link{
     list-style: none;
-    padding: 0 20px;
+    padding: 0 35px;
+    position:relative
+}
+
+.logo{
     position: relative;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    color: black
 }
 
 .a {
     text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    color: rgb(68, 68, 68);
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
     transition: 0.3s ease;
     list-style: none;
 }
 
 .a:hover,
 .a.active {
-    color: #afafaf;
+    color: #fffafa;
 }
 /* banner */
-.hero{
-    background-image: url("../imagen/linda-mujer-playa-contra-fondo-mar_78967-4430.jpg");
-    height: 90vh;
+.banner{
+    height: 85vh;
     width: 100%;
-    background-position: top 55% right 0 ;
+    background-position: top 0% right  ;
+}
+/* titulo */
+.medio{
+    text-align: center;
+    padding-top: 30px;
+    color: #ffc08c;
+}
+/* productos */
+.bcard{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    text-align: center;
+}
+.pro{
+    width: 80%;
+    min-width: 100px;
+    padding: 10px 10px;
+    border: 1px solid #f1f1f1;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.003);
+    margin: 15px 0;
+    transition: 0.02s ease;
+    position: relative;
+    left: 10%;
 }
 
+.img{
+    width: 100%;
+    border-radius: 30px;
+}
+.colo :hover{
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.100);
+}
+
+.titulo{
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;    
+    text-align: center;
+
+}
+
+.carro{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    background-color: rgba(241, 210, 122, 0.623);
+    font-weight: 300;
+    border: 1px solid #00000025;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    text-decoration: none;
+    
+}
+
+/* detalle */
+.sectionp1{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+}
+/* .prodetails{
+    display: flex;
+    margin-top: 10%;
+}
+.single-pro-image{
+    width: 30%;
+    margin-right: 10%;
+    padding-left: 30px;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 40%;
+    cursor: pointer;
+}
+.single-pro-details{ 
+    width: 60%;
+    padding-top: 30px;
+}
+.alto{
+    padding: 40px 0 20px 0;
+} 
+.bajo{
+    font-size: 26px;
+} */
+.elegir{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+} 
+/* .roto{
+    width: 10%;
+    height: 17px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+} 
+.roto :focus{
+    outline: none;
+} */
+
+/* .des{
+    line-height: 25px;
+} */
+
+/* contador */
+.count,
+.cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.numero{
+    padding: 20px;    
+}
+
+.compra{
+    background-color: #ffc08c ;
+    color: #000000;
+} 
+
+/* footer */
+.rp{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+}
+
+.col{
+    padding-left: 30px;
+}

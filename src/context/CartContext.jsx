@@ -39,3 +39,17 @@
 //     </CartContext.Provider>
 //   )
 // }
+
+import { createContext } from 'react'
+
+
+
+export default function CartContext({children})  {
+
+    const Cart = createContext()
+
+    return (
+          <Cart.Provider> { children } </Cart.Provider>
+          )
+}
+

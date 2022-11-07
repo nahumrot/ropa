@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Title() {
   return (
-    <h1> Vamos que se puede!! </h1>
+    <h2 className='medio'> Productos Destacados </h2>
   )
 }
